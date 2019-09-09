@@ -30,6 +30,18 @@ We follow the [conventional commits specification](https://www.conventionalcommi
 
 Our pre-commit hooks verify that your commit message matches this format when committing.
 
+### Git Branch Name Convention
+
+When you are creating a branch pls check with the below convention if it is a
+- Feature: prefix your branch name with feature/{*your branch name*}.
+- Bug: prefix your branch name with bug/{*your bug name/no*}.
+- Refactor: prefix your branch name with refactor/{*module name of the app*}.
+- Hotfix: any prod issue or thing needs to be addressed immediately, prefix your change with hotfix/{*regds your fix*}.
+
+Stable Branch:
+- There should always only one develop, and one master branch for a client (Since we might have different client for a project).
+- We should create git tags for every release to production with the name as feature to the last commit.
+
 ### Sending a pull request
 
 When you're sending a pull request:
